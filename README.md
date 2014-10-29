@@ -16,6 +16,7 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  
 # Brief Usage Tutorial
  1. Make sure that you have a VistALink port open on your VISTA environment. Cache users can use the XOBU SITE SETUP MENU to start a port. GT.M users need to use a xinetd listener that invokes `GTMLNX^XOBVTCP`.
+ 1.5 MAKE SURE YOU HAVE the key XUPROGMODE.
  2. Menu Window > Preferences > VistA. Give the server a name and add its ip address and port number for your VistALink port.
  3. Hit OK, OK.
  4. Open M Prespective by Window > Open Prespective > Other > VistA. You may need to resize your prespective  "restoring" the Windows.
