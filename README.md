@@ -12,9 +12,10 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  - Enter `M-tools` in first field and `https://raw.githubusercontent.com/shabiel/M-Tools-Project/master/MToolsUpdateSiteProject/` on the next.
  - Click on Next, Next, Accept the license, Finish.
  - Override the warning about unsigned content
+ - On the VISTA server, install this build: https://raw.githubusercontent.com/shabiel/M-Tools-Project/master/MiscDependencies/KIDS/M-Editor/XT73P101T9.KID
  
 # Brief Usage Tutorial
- 1. Make sure that you have a VistALink port open on your VISTA environment. GT.M users need to use xinetd.
+ 1. Make sure that you have a VistALink port open on your VISTA environment. Cache users can use the XOBU SITE SETUP MENU to start a port. GT.M users need to use a xinetd listener that invokes `GTMLNX^XOBVTCP`.
  2. Menu Window > Preferences > VistA. Give the server a name and add its ip address and port number for your VistALink port.
  3. Hit OK, OK.
  4. Open M Prespective by Window > Open Prespective > Other > VistA. You may need to resize your prespective  "restoring" the Windows.
