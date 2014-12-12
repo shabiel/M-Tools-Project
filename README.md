@@ -4,7 +4,7 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
 # Installation
 ## Requirements
  - Recent Eclipse. Tested on Luna and Kepler.
- - Java 1.7. YOU MUST CHECK FOR THAT USING YOUR OS'S COMMAND LINE. ECLISPE DOES NOT WARN YOU IF IT CAN'T LOAD IT. I have not tried Java 1.8.
+ - Java 1.7. YOU MUST CHECK FOR THAT USING YOUR OS'S COMMAND LINE. ECLISPE DOES NOT WARN YOU IF IT CAN'T LOAD IT. Use `java -version` to find out what version you have. I have not tried Java 1.8.
 
 ## How to install
  - On Eclipse, Menu Help > Install New Software...
