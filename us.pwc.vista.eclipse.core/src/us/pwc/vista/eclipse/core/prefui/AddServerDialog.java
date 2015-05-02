@@ -27,6 +27,8 @@ public class AddServerDialog extends Dialog {
 	private Text nameCtrl;
 	private Text addressCtrl;
 	private Text portCtrl;
+	private Text acCtrl;
+	private Text vcCtrl;
 	
 	private ServerData data;
 
@@ -52,6 +54,8 @@ public class AddServerDialog extends Dialog {
 		this.nameCtrl = this.createTextLablePair(panel, "Server name:");
 		this.addressCtrl = this.createTextLablePair(panel, "Server address:");
 		this.portCtrl = this.createTextLablePair(panel, "Server port:");
+		this.acCtrl = this.createTextLablePair(panel, "Access Code:");
+		this.vcCtrl = this.createTextLablePair(panel, "Verify Code:");
 		
 		return panel;
 	}
