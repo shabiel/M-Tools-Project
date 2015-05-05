@@ -7,8 +7,9 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  - Java 1.7 or Java 1.8. YOU MUST CHECK FOR THAT USING YOUR OS'S COMMAND LINE.
  ECLISPE DOES NOT WARN YOU IF IT CAN'T LOAD IT. Use `java -version` to find out
  what version you have.
- - DOES NOT WORK ON MACS. Joel Ivey's version works, but I have to make
-   instructions for it.
+ - DOES NOT WORK ON MACS due to AWT Bugs with Eclipse and Mac. AWT bug not
+ present in Java 1.6, but this plug-in requires a minimum of Java 1.7 to run.
+ And it is definitely not secure to run Java 1.6 anywhere now.
 
 ## How to install
 ### Eclipse
