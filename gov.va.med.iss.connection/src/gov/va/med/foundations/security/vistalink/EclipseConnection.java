@@ -7,6 +7,7 @@
 package gov.va.med.foundations.security.vistalink;
 
 import java.awt.Frame;
+import java.security.GeneralSecurityException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -134,6 +135,87 @@ public class EclipseConnection {
 		if (! (topFrame == null)) topFrame.dispose();
 		return userPrincipal;
 	}
+	
+public VistaKernelPrincipalImpl getConnection(String server, String port, String ac, String vc) 
+{	
+	int intPort;
+	IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+	Subject subject = new Subject();
+	
+	CurrentIpAndPort currentIpAndPort = new CurrentIpAndPort();
+	currentIpAndPort.setIp(server);
+	currentIpAndPort.setPort(port);
+
+	AppConfigurationEntry loginAppConfig = getAppConfigurationEntry(currentIpAndPort.getIp(), currentIpAndPort.getPort());
+	VistaLinkJaasConfiguration loginConfiguration = new VistaLinkJaasConfiguration(loginAppConfig);
+	Configuration.setConfiguration(loginConfiguration);
+	
+	try 
+	{
+		eclipseLoginModule = new EclipseLoginModule();
+		eclipseLoginModule.initialize(subject);
+		intPort = Integer.parseInt(port);
+	} 
+	catch (Exception e) 
+	{
+		throw new RuntimeException("Error in eclipseLoginModule creation " + e.getMessage());
+	}
+	
+	try
+	{
+		@SuppressWarnings("unused")
+		boolean loggedin = eclipseLoginModule.loginSilent(server, intPort, ac, vc);
+		boolean silent = true;
+		
+		@SuppressWarnings("unused")
+		boolean committed = eclipseLoginModule.commit(silent);
+		userPrincipal = VistaKernelPrincipalImpl.getKernelPrincipal(eclipseLoginModule.getSubject());
+
+	}
+	 catch (Exception e) {
+			if (e.getMessage().indexOf("Connection timed out") > -1) {
+				MessageDialog.openInformation(
+						window.getShell(),
+						"Meditor Login Error",
+						"Timed out while attempting to connect.\n\nCheck that  \""+server+"\" and "+port+" are correct for server and port.\n\nCheck that the listener is running.");
+
+			}
+			else if (e.getMessage().indexOf("Connection refused: connect") > -1) {
+				MessageDialog.openError(
+						window.getShell(),
+						"MEditor Login Error",
+						"Connection Refused - check if VistALink listener is running");
+			}
+			else if (e.getMessage().indexOf("response is not VistaLink") > -1) {
+				MessageDialog.openError(
+						window.getShell(),
+						"MEditor Login Error",
+						"Connection Refused - does not appear to be a VistALink listener (a VistaLink not RPCBroker listener port is needed).");
+			}
+			else if (e.getMessage().indexOf("ArrayIndexOutOfBounds") > -1) {
+				MessageDialog.openError(
+						window.getShell(),
+						"MEditor Login Error",
+						"Connection Refused - check that a VistALink listener is running on the specified port and that the port number is not for an RPCBroker listener.");
+			}
+			else if (e.getMessage().indexOf("Error converting port string to integer") > -1) {
+				MessageDialog.openError(
+						window.getShell(),
+						"MEditor Login Error",
+						"Connection Refused - not a numeric port number (and perhaps other problems).  From the menu select Window - Preferences - expand the VistA tab and select Connection.  Add a new entry with the correct data, then use the  Move Up button to make it first in the list, then select the bad entry (next to the top) and click the Remove button to remove it.  Then click Apply and OK.");
+			}
+			else {
+				MessageDialog.openInformation(
+					window.getShell(),
+					"Meditor Login Error",
+					e.getMessage());
+			}
+			userPrincipal = null;
+			topFrame.dispose();
+		}
+	
+	return userPrincipal;
+}
 
 	
 	@SuppressWarnings("rawtypes")

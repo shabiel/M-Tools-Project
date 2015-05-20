@@ -51,16 +51,16 @@ public class AddServerDialog extends Dialog {
 		panel.setLayout(layout);
 		SWTHelper.setGridData(panel, SWT.FILL, true, SWT.FILL, false);
 
-		this.nameCtrl = this.createTextLablePair(panel, "Server name:");
-		this.addressCtrl = this.createTextLablePair(panel, "Server address:");
-		this.portCtrl = this.createTextLablePair(panel, "Server port:");
-		this.acCtrl = this.createTextLablePair(panel, "Access Code:");
-		this.vcCtrl = this.createTextLablePair(panel, "Verify Code:");
+		this.nameCtrl = this.createTextLabelPair(panel, "Server name:");
+		this.addressCtrl = this.createTextLabelPair(panel, "Server address:");
+		this.portCtrl = this.createTextLabelPair(panel, "Server port:");
+		this.acCtrl = this.createTextLabelPair(panel, "Access Code:");
+		this.vcCtrl = this.createTextLabelPair(panel, "Verify Code:");
 		
 		return panel;
 	}
 
-	private Text createTextLablePair(Composite parent, String labelText) {
+	private Text createTextLabelPair(Composite parent, String labelText) {
 		Label labelCtrl = new Label(parent, SWT.NONE);
 		labelCtrl.setText(labelText);
 
@@ -114,10 +114,12 @@ public class AddServerDialog extends Dialog {
 	}
 	
 	private ServerData ctrlToData() {
-		String name = this.nameCtrl.getText();
+		String name    = this.nameCtrl.getText();
 		String address = this.addressCtrl.getText();
-		String port = this.portCtrl.getText();		
-		return new ServerData(name, address, port);
+		String port    = this.portCtrl.getText();
+		String ac      = this.acCtrl.getText();
+		String vc      = this.vcCtrl.getText();
+		return new ServerData(name, address, port, ac, vc);
 	}
 
 	public ServerData getData() {
