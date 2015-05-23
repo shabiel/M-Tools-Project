@@ -1159,6 +1159,10 @@ public class EclipseLoginModule {
 		return true;
 	}
 
+	/* VEN/SMH I overloaded the previous method so that I can
+	 * get a new signature for just doing a commit with no UI work
+	 */
+	
 	@SuppressWarnings("unchecked")
 	public boolean commit(boolean silent) throws LoginException {
 		if (!subject.getPrincipals().contains(userPrincipal)) {
@@ -1166,6 +1170,7 @@ public class EclipseLoginModule {
 		}
 		return true;
 	}
+	
 	/**
 	 * Should never be called by an application directly. Instead, this method is invoked behind the scenes by the proxy
 	 * of the JAAS LoginContext.<p> Part of the JAAS interface for a login module. This loginmodule's implementation of
