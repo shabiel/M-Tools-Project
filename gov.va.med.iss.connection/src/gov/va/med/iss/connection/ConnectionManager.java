@@ -58,6 +58,7 @@ public class ConnectionManager {
 			EclipseConnection eclipseConnection = new EclipseConnection();
 			VistaKernelPrincipalImpl principal;
 			
+			/* VEN/SMH - new to support silent log-in */
 			if (serverData.getAC() != null && serverData.getVC() != null)
 			{
 				 principal = eclipseConnection.getConnection(

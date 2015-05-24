@@ -531,7 +531,11 @@ public class EclipseLoginModule {
 
 		return returnVal;
 	}
-
+	/*
+	 * @author Sam Habiel
+	 * Silent log-in, generally useful; but also good to support Mac OS as AWT in Eclipse
+	 * doesn't work as of Java 7.
+	 */
 	public boolean loginSilent(String serverAddress, int serverPort, String ac, String vc)
 			throws
 				VistaLoginModuleException,
@@ -584,14 +588,14 @@ public class EclipseLoginModule {
 				}
 			}
 			
-			// Create log-in message XUSRB
+			// Create log-in message for XUS AV CODE
 			requestVO = SecurityRequestFactory.getAVLogonRequest(ac, vc, false);
 
 			if (logger.isDebugEnabled()) {
 				logger.debug("-> sending " + SecurityRequestFactory.MSG_ACTION_LOGON);
 			}
 
-			// and log-in
+			// and call XUS AV CODE
 			SecurityDataLogonResponse logonResponseData =
 					(SecurityDataLogonResponse) myConnection.executeInteraction(requestVO, securityResponseFactory);
 
@@ -599,6 +603,7 @@ public class EclipseLoginModule {
 				logger.debug("Result from logonResposeData: " + logonResponseData.getResultType());
 			}
 			
+			// XUS AV CODE says we can't log-in or we need to change our verify code.
 			if (logonResponseData.getResultType() == SecurityResponse.RESULT_PARTIAL ||
 					logonResponseData.getResultType() == SecurityResponse.RESULT_FAILURE)
 			{
@@ -609,12 +614,16 @@ public class EclipseLoginModule {
 
 			else
 			{
+				// Call XUS GET USER INFO
 				assert(logonResponseData.getResultType() == SecurityResponse.RESULT_SUCCESS);
 				getUserDemographicsAndBuildPrincipal(myConnection, securityResponseFactory);
 				userPrincipal.setAuthenticatedConnection(myConnection);
 				loginSucceeded = true;
 			}
 		}
+		
+		
+		
 		catch (ParserConfigurationException e) {
 			logoutConnectionBeforeLoginComplete(myConnection, securityResponseFactory);
 			if (logger.isEnabledFor(Level.ERROR)) {
@@ -642,6 +651,7 @@ public class EclipseLoginModule {
 	/**
 	 * Called by both the "auto-logon" and regular logon code to process a partially successful login
 	 * (i.e., either the v/c needs to be changed or a division needs to be selected.)
+	 * (nb: not called by silent log-on... b/c it's silent)
 	 * @param myConnection connection to use
 	 * @param responseData the logon response returned from the logon attempt that was partially successful
 	 * @param retryLogonCount # of times to retry the login
