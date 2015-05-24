@@ -119,8 +119,14 @@ public class ServerData {
     }
     
     public boolean isComplete() {
-    	// Version 1: no ac/vc
-    	if (this.ac.isEmpty() && this.vc.isEmpty()) 
+    	// Are we on a Mac? Eclipse doesn't support AWT on a Mac
+    	// since Java 1.7. Causes a dead lock.
+    	// Ref: https://developer.apple.com/legacy/library/technotes/tn2147/_index.html
+    	// Ref: https://community.oracle.com/thread/1394443
+    	boolean onMac = System.getProperty("os.name").toUpperCase().contains("MAC");
+    	
+    	// Version 1: no ac/vc (but only on Non-Macs
+    	if (this.ac.isEmpty() && this.vc.isEmpty() && !onMac) 
     	{
     		return ! (this.name.isEmpty() || this.address.isEmpty() || this.port.isEmpty());
     	}

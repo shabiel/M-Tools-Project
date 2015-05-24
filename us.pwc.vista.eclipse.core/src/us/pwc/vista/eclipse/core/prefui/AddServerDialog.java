@@ -51,6 +51,8 @@ public class AddServerDialog extends Dialog {
 		panel.setLayout(layout);
 		SWTHelper.setGridData(panel, SWT.FILL, true, SWT.FILL, false);
 
+	    Label label = new Label(parent, SWT.NONE);
+	    label.setText("Mac users must fill in AC/VC");
 		this.nameCtrl = this.createTextLabelPair(panel, "Server name:");
 		this.addressCtrl = this.createTextLabelPair(panel, "Server address:");
 		this.portCtrl = this.createTextLabelPair(panel, "Server port:");
