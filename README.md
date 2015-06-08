@@ -85,7 +85,7 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  4. Open M Prespective by Window > Open Prespective > Other > VistA. You may need to resize your prespective by "restoring" the Windows.
  5. Create a new Project, or import a git repository. You can google the latter. For the first, File > New > Project > General > Project. Choose a name and hit okay. 
  6. On the Project Exlporer on your upper left corner, right click on the Project, choose Properties, then choose VistA. Type in the name *exactly* of your VistA server that you set up in Step 2. Hit OK.
- 7. Click on Menu VistA > Connect to VistA. You should see a screen asking you for the access and verify code. If you don't see this screen, you need to check all your settings, down to whether you can even connect to the VistALink port from netcat or telnet. Also, YOU MUST USE A USER WHO HAS THE KEY XUPROGMODE.
+ 7. Click on Menu VistA > Connect to VistA. You should see a screen asking you for the access and verify code; if you haven't entered your access and verify code in the preferences box. If you don't see this screen, you need to check all your settings, down to whether you can even connect to the VistALink port from netcat or telnet. Also, YOU MUST USE A USER WHO HAS THE KEY XUPROGMODE.
  8. Once you are signed in, you can use the VistA menu or the ugly green M button to load a routine. Saving is done using the regular Eclipse Save. To create a new routine Menu File > New > VistA Routine.
  
  That's it.
