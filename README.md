@@ -7,9 +7,6 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  - Java 1.7 or Java 1.8. YOU MUST CHECK FOR THAT USING YOUR OS'S COMMAND LINE.
  ECLISPE DOES NOT WARN YOU IF IT CAN'T LOAD IT. Use `java -version` to find out
  what version you have.
- - DOES NOT WORK ON MACS due to AWT Bugs with Eclipse and Mac. AWT bug not
- present in Java 1.6, but this plug-in requires a minimum of Java 1.7 to run.
- And it is definitely not secure to run Java 1.6 anywhere now.
 
 ## How to install
 ### Eclipse
@@ -83,7 +80,7 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  
 # Brief Usage Tutorial
  1. Make sure that you have a VistALink port open on your VISTA environment. Cache users can use the XOBU SITE SETUP MENU to start a port. GT.M users need to use a xinetd listener that invokes `GTMLNX^XOBVTCP`.
- 2. Menu Window > Preferences > VistA. Give the server a name and add its ip address and port number for your VistALink port.
+ 2. Menu Window > Preferences > VistA. Give the server a name and add its ip address and port number for your VistALink port. You can optionally put in an access code and verify code (NEW). If you are on a Mac, you will not be allowed to proceed unless you put those in, as the windowing system for prompting for access code and verify code cannot be run on the Mac to due threading issues with Eclipse and Cocoa starting from Java 1.7.
  3. Hit OK, OK.
  4. Open M Prespective by Window > Open Prespective > Other > VistA. You may need to resize your prespective by "restoring" the Windows.
  5. Create a new Project, or import a git repository. You can google the latter. For the first, File > New > Project > General > Project. Choose a name and hit okay. 
