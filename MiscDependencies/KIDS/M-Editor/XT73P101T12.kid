@@ -1,138 +1,142 @@
-KIDS Distribution saved on Sep 04, 2013@22:22:42
-MEDITOR PWC
+KIDS Distribution saved on Apr 17, 2015@16:20:41
+T12: Added the correct version of XUSRB1
 **KIDS**:XT*7.3*101^
 
 **INSTALL NAME**
 XT*7.3*101
-"BLD",9037,0)
-XT*7.3*101^TOOLKIT^0^3130904^y^^
-"BLD",9037,1,0)
-^^3^3^3120127^^^^
-"BLD",9037,1,1,0)
+"BLD",9827,0)
+XT*7.3*101^TOOLKIT^0^3150417^y^^
+"BLD",9827,1,0)
+^^3^3^3150417^^^^
+"BLD",9827,1,1,0)
 XT*7.3*101
-"BLD",9037,1,2,0)
+"BLD",9827,1,2,0)
  
-"BLD",9037,1,3,0)
+"BLD",9827,1,3,0)
 See the patch module for details.
-"BLD",9037,4,0)
+"BLD",9827,4,0)
 ^9.64PA^^
-"BLD",9037,6.3)
-32
-"BLD",9037,"KRN",0)
+"BLD",9827,6.3)
+34
+"BLD",9827,"KRN",0)
 ^9.67PA^8989.52^19
-"BLD",9037,"KRN",.4,0)
+"BLD",9827,"KRN",.4,0)
 .4
-"BLD",9037,"KRN",.401,0)
+"BLD",9827,"KRN",.401,0)
 .401
-"BLD",9037,"KRN",.402,0)
+"BLD",9827,"KRN",.402,0)
 .402
-"BLD",9037,"KRN",.403,0)
+"BLD",9827,"KRN",.403,0)
 .403
-"BLD",9037,"KRN",.5,0)
+"BLD",9827,"KRN",.5,0)
 .5
-"BLD",9037,"KRN",.84,0)
+"BLD",9827,"KRN",.84,0)
 .84
-"BLD",9037,"KRN",3.6,0)
+"BLD",9827,"KRN",3.6,0)
 3.6
-"BLD",9037,"KRN",3.8,0)
+"BLD",9827,"KRN",3.8,0)
 3.8
-"BLD",9037,"KRN",9.2,0)
+"BLD",9827,"KRN",9.2,0)
 9.2
-"BLD",9037,"KRN",9.8,0)
+"BLD",9827,"KRN",9.8,0)
 9.8
-"BLD",9037,"KRN",9.8,"NM",0)
-^9.68A^5^5
-"BLD",9037,"KRN",9.8,"NM",1,0)
+"BLD",9827,"KRN",9.8,"NM",0)
+^9.68A^6^6
+"BLD",9827,"KRN",9.8,"NM",1,0)
 XTECLIPS^^0^B3789827
-"BLD",9037,"KRN",9.8,"NM",2,0)
+"BLD",9827,"KRN",9.8,"NM",2,0)
 XTECGLO^^0^B221715057
-"BLD",9037,"KRN",9.8,"NM",3,0)
+"BLD",9827,"KRN",9.8,"NM",3,0)
 XTECROU^^0^B51806057
-"BLD",9037,"KRN",9.8,"NM",4,0)
+"BLD",9827,"KRN",9.8,"NM",4,0)
 XTMRPAR1^^0^B62027368
-"BLD",9037,"KRN",9.8,"NM",5,0)
-XTMRPAR2^^0^B36584102
-"BLD",9037,"KRN",9.8,"NM","B","XTECGLO",2)
+"BLD",9827,"KRN",9.8,"NM",5,0)
+XTMRPAR2^^0^B36902188
+"BLD",9827,"KRN",9.8,"NM",6,0)
+XUSRB1^^0^B20693023
+"BLD",9827,"KRN",9.8,"NM","B","XTECGLO",2)
 
-"BLD",9037,"KRN",9.8,"NM","B","XTECLIPS",1)
+"BLD",9827,"KRN",9.8,"NM","B","XTECLIPS",1)
 
-"BLD",9037,"KRN",9.8,"NM","B","XTECROU",3)
+"BLD",9827,"KRN",9.8,"NM","B","XTECROU",3)
 
-"BLD",9037,"KRN",9.8,"NM","B","XTMRPAR1",4)
+"BLD",9827,"KRN",9.8,"NM","B","XTMRPAR1",4)
 
-"BLD",9037,"KRN",9.8,"NM","B","XTMRPAR2",5)
+"BLD",9827,"KRN",9.8,"NM","B","XTMRPAR2",5)
 
-"BLD",9037,"KRN",19,0)
+"BLD",9827,"KRN",9.8,"NM","B","XUSRB1",6)
+
+"BLD",9827,"KRN",19,0)
 19
-"BLD",9037,"KRN",19.1,0)
+"BLD",9827,"KRN",19.1,0)
 19.1
-"BLD",9037,"KRN",101,0)
+"BLD",9827,"KRN",101,0)
 101
-"BLD",9037,"KRN",409.61,0)
+"BLD",9827,"KRN",409.61,0)
 409.61
-"BLD",9037,"KRN",771,0)
+"BLD",9827,"KRN",771,0)
 771
-"BLD",9037,"KRN",870,0)
+"BLD",9827,"KRN",870,0)
 870
-"BLD",9037,"KRN",8989.51,0)
+"BLD",9827,"KRN",8989.51,0)
 8989.51
-"BLD",9037,"KRN",8989.52,0)
+"BLD",9827,"KRN",8989.52,0)
 8989.52
-"BLD",9037,"KRN",8994,0)
+"BLD",9827,"KRN",8994,0)
 8994
-"BLD",9037,"KRN",8994,"NM",0)
+"BLD",9827,"KRN",8994,"NM",0)
 ^9.68A^1^1
-"BLD",9037,"KRN",8994,"NM",1,0)
+"BLD",9827,"KRN",8994,"NM",1,0)
 XT ECLIPSE M EDITOR^^0
-"BLD",9037,"KRN",8994,"NM","B","XT ECLIPSE M EDITOR",1)
+"BLD",9827,"KRN",8994,"NM","B","XT ECLIPSE M EDITOR",1)
 
-"BLD",9037,"KRN","B",.4,.4)
+"BLD",9827,"KRN","B",.4,.4)
 
-"BLD",9037,"KRN","B",.401,.401)
+"BLD",9827,"KRN","B",.401,.401)
 
-"BLD",9037,"KRN","B",.402,.402)
+"BLD",9827,"KRN","B",.402,.402)
 
-"BLD",9037,"KRN","B",.403,.403)
+"BLD",9827,"KRN","B",.403,.403)
 
-"BLD",9037,"KRN","B",.5,.5)
+"BLD",9827,"KRN","B",.5,.5)
 
-"BLD",9037,"KRN","B",.84,.84)
+"BLD",9827,"KRN","B",.84,.84)
 
-"BLD",9037,"KRN","B",3.6,3.6)
+"BLD",9827,"KRN","B",3.6,3.6)
 
-"BLD",9037,"KRN","B",3.8,3.8)
+"BLD",9827,"KRN","B",3.8,3.8)
 
-"BLD",9037,"KRN","B",9.2,9.2)
+"BLD",9827,"KRN","B",9.2,9.2)
 
-"BLD",9037,"KRN","B",9.8,9.8)
+"BLD",9827,"KRN","B",9.8,9.8)
 
-"BLD",9037,"KRN","B",19,19)
+"BLD",9827,"KRN","B",19,19)
 
-"BLD",9037,"KRN","B",19.1,19.1)
+"BLD",9827,"KRN","B",19.1,19.1)
 
-"BLD",9037,"KRN","B",101,101)
+"BLD",9827,"KRN","B",101,101)
 
-"BLD",9037,"KRN","B",409.61,409.61)
+"BLD",9827,"KRN","B",409.61,409.61)
 
-"BLD",9037,"KRN","B",771,771)
+"BLD",9827,"KRN","B",771,771)
 
-"BLD",9037,"KRN","B",870,870)
+"BLD",9827,"KRN","B",870,870)
 
-"BLD",9037,"KRN","B",8989.51,8989.51)
+"BLD",9827,"KRN","B",8989.51,8989.51)
 
-"BLD",9037,"KRN","B",8989.52,8989.52)
+"BLD",9827,"KRN","B",8989.52,8989.52)
 
-"BLD",9037,"KRN","B",8994,8994)
+"BLD",9827,"KRN","B",8994,8994)
 
-"BLD",9037,"QDEF")
+"BLD",9827,"QDEF")
 ^^^^NO^^^^NO^^NO
-"BLD",9037,"QUES",0)
+"BLD",9827,"QUES",0)
 ^9.62^^
-"BLD",9037,"REQB",0)
+"BLD",9827,"REQB",0)
 ^9.611^^
-"KRN",8994,3032,-1)
+"KRN",8994,3314,-1)
 0^1
-"KRN",8994,3032,0)
+"KRN",8994,3314,0)
 XT ECLIPSE M EDITOR^RPC^XTECLIPS^4^^^^1
 "MBREQ")
 0
@@ -149,9 +153,9 @@ TOOLKIT^XT^PROGRAMMERS OPTIONS, MULTI. TERM LOOKUP
 "PKG",5,22,1,0)
 7.3^3051119^2960604
 "PKG",5,22,1,"PAH",1,0)
-101^3130904^1
+101^3150417^1
 "PKG",5,22,1,"PAH",1,1,0)
-^^3^3^3130904
+^^3^3^3150417
 "PKG",5,22,1,"PAH",1,1,1,0)
 XT*7.3*101
 "PKG",5,22,1,"PAH",1,1,2,0)
@@ -229,13 +233,13 @@ NO
 "QUES","XPZ2","M")
 D XPZ2^XPDIQ
 "RTN")
-5
+6
 "RTN","XTECGLO")
 0^2^B221715057
 "RTN","XTECGLO",1,0)
 XTECGLO ;FO-OAK/JLI - Global Utilities for Eclipse ;08/10/12  06:20
 "RTN","XTECGLO",2,0)
- ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 32
+ ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 34
 "RTN","XTECGLO",3,0)
  ;;Per VHA Directive 2004-038, this routine should not be modified
 "RTN","XTECGLO",4,0)
@@ -1045,7 +1049,7 @@ COMMACNT(GLOBAL) ;returns comma length for GLOBAL
 "RTN","XTECLIPS",1,0)
 XTECLIPS ;JLI/FO-OAK - Eclipse Interface Via VistA Link ;01/15/12  13:56
 "RTN","XTECLIPS",2,0)
- ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 32
+ ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 34
 "RTN","XTECLIPS",3,0)
  ;;Per VHA Directive 2004-038, this routine should not be modified
 "RTN","XTECLIPS",4,0)
@@ -1123,7 +1127,7 @@ RPC(XTECRES,XTECFUNC,XTECLINE,XTECFROM,XTECTO,XTECOPT,XTECXTRA) ;
 "RTN","XTECROU",1,0)
 XTECROU ;FO-OAK/JLI - routine processing for eclipse ;6/21/2013
 "RTN","XTECROU",2,0)
- ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 32
+ ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 34
 "RTN","XTECROU",3,0)
  ;;Per VHA Directive 2004-038, this routine should not be modified
 "RTN","XTECROU",4,0)
@@ -1591,7 +1595,7 @@ FILE(X) ; file routine name X to ROUTINE FILE if not already present
 "RTN","XTMRPAR1",1,0)
 XTMRPAR1 ;jli/oifo-oak - list tags, find variables that aren't arguments or newed ;10/28/10  16:18
 "RTN","XTMRPAR1",2,0)
- ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 32
+ ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 34
 "RTN","XTMRPAR1",3,0)
  D EN^XTMUNIT("ZZUTXTM1") ; RUN UNIT TESTS
 "RTN","XTMRPAR1",4,0)
@@ -1998,14 +2002,12 @@ GETQUOTE(LINE,TOKEN,TERM) ;
  Q $$GETQUOTE^XTMRPAR2(LINE,.TOKEN,.TERM)
 "RTN","XTMRPAR1",205,0)
  ;
-"RTN","XTMRPAR1",206,0)
- ;
 "RTN","XTMRPAR2")
-0^5^B36584102
+0^5^B36902188
 "RTN","XTMRPAR2",1,0)
 XTMRPAR2 ;FO-OAK/JLI - list tags, find variables that aren't arguments or newed - continued ;10/28/10  16:28
 "RTN","XTMRPAR2",2,0)
- ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 32
+ ;;7.3;TOOLKIT;**101**;Apr 25, 1995;Build 34
 "RTN","XTMRPAR2",3,0)
  ;;Per VHA Directive 2004-038, this routine should not be modified
 "RTN","XTMRPAR2",4,0)
@@ -2115,9 +2117,9 @@ GETCMD(LINE,LINENUM,ARGNUM,LOCSTOR) ;
 "RTN","XTMRPAR2",56,0)
  S LIST2="A^BREAK^C^DO^ELSE^FOR^GO^HALT^IF^JOB^KILL^LOCK^MERGE^NEW^OPEN^P^QUIT^READ^SET^T^USE^V^WRITE^X^Y^Z"
 "RTN","XTMRPAR2",57,0)
- F I=1:1:$L(LIST1,U) I TOKEN=$P(LIST1,U,I) S CMD=$P(LIST2,U,I)
+ F I=1:1:$L(LIST1,U) I $$UP(TOKEN)=$P(LIST1,U,I) S CMD=$P(LIST2,U,I)
 "RTN","XTMRPAR2",58,0)
- I CMD="" I U_LIST2_U[U_TOKEN_U S CMD=TOKEN
+ I CMD="" I U_LIST2_U[U_$$UP(TOKEN)_U S CMD=$$UP(TOKEN)
 "RTN","XTMRPAR2",59,0)
  I CMD="" S CMD="UNKNOWN - "_TOKEN
 "RTN","XTMRPAR2",60,0)
@@ -2258,6 +2260,142 @@ GETQUOTE(LINE,TOKEN,TERM) ;
  ;
 "RTN","XTMRPAR2",128,0)
  ;
+"RTN","XTMRPAR2",129,0)
+UP(X) Q $$UP^XLFSTR(X)
+"RTN","XUSRB1")
+0^6^B20693023
+"RTN","XUSRB1",1,0)
+XUSRB1 ;iscSF/RWF - More Request Broker ;6/8/04  16:41
+"RTN","XUSRB1",2,0)
+ ;;8.0;KERNEL;**28,82,135,275**;Jul 10, 1995;Build 34
+"RTN","XUSRB1",3,0)
+ Q  ;No entry from top
+"RTN","XUSRB1",4,0)
+ ;
+"RTN","XUSRB1",5,0)
+DECRYP(S) ;decrypt passed string
+"RTN","XUSRB1",6,0)
+ ;VYD 5/19/95
+"RTN","XUSRB1",7,0)
+ N ASSOCIX,IDIX,ASSOCSTR,IDSTR
+"RTN","XUSRB1",8,0)
+ Q:$L(S)'>2 "" ;Bad call
+"RTN","XUSRB1",9,0)
+ S ASSOCIX=$A($E(S,$L(S)))-31           ;get associator string index
+"RTN","XUSRB1",10,0)
+ S IDIX=$A($E(S))-31                    ;get identifier string index
+"RTN","XUSRB1",11,0)
+ S ASSOCSTR=$P($T(Z+ASSOCIX),";",3,9)   ;get associator string
+"RTN","XUSRB1",12,0)
+ S IDSTR=$P($T(Z+IDIX),";",3,9)         ;get identifier string
+"RTN","XUSRB1",13,0)
+ Q $TR($E(S,2,$L(S)-1),ASSOCSTR,IDSTR)  ;translated result
+"RTN","XUSRB1",14,0)
+ ;
+"RTN","XUSRB1",15,0)
+ENCRYP(S) ;RWF 2/5/96
+"RTN","XUSRB1",16,0)
+ N %,ASSOCIX,IDIX,ASSOCSTR,IDSTR
+"RTN","XUSRB1",17,0)
+ S ASSOCIX=$R(20)+1                     ;get associator index
+"RTN","XUSRB1",18,0)
+ F  S IDIX=$R(20)+1 Q:ASSOCIX'=IDIX     ;get different identifier index
+"RTN","XUSRB1",19,0)
+ S ASSOCSTR=$P($T(Z+ASSOCIX),";",3,9)   ;get associator string
+"RTN","XUSRB1",20,0)
+ S IDSTR=$P($T(Z+IDIX),";",3,9)         ;get identifier string
+"RTN","XUSRB1",21,0)
+ ;translated result
+"RTN","XUSRB1",22,0)
+ Q $C(IDIX+31)_$TR(S,IDSTR,ASSOCSTR)_$C(ASSOCIX+31)
+"RTN","XUSRB1",23,0)
+ ;
+"RTN","XUSRB1",24,0)
+SENDKEYS(RESULT) ;send encryption keys to the client
+"RTN","XUSRB1",25,0)
+ ;VYD 5/19/95
+"RTN","XUSRB1",26,0)
+ N %,X
+"RTN","XUSRB1",27,0)
+ S %=1
+"RTN","XUSRB1",28,0)
+ F  S X=$P($T(Z+%),";",3,9) Q:X=""  S RESULT(%)=X,%=%+1
+"RTN","XUSRB1",29,0)
+ Q
+"RTN","XUSRB1",30,0)
+ ;
+"RTN","XUSRB1",31,0)
+BLDDRUM Q  ;don't run this tag
+"RTN","XUSRB1",32,0)
+ N I,%,ALLCHARS,RNDMSTR,CHAR
+"RTN","XUSRB1",33,0)
+ X "ZP Z"                      ;position insertion point
+"RTN","XUSRB1",34,0)
+ F I=1:1:20 D
+"RTN","XUSRB1",35,0)
+ . S ALLCHARS="" F %=32:1:126 S:$C(%)'="^" ALLCHARS=ALLCHARS_$C(%)
+"RTN","XUSRB1",36,0)
+ . S RNDMSTR=""
+"RTN","XUSRB1",37,0)
+ . F %=1:1:94 D
+"RTN","XUSRB1",38,0)
+ . . S POS=$R($L(ALLCHARS))+1,CHAR=$E(ALLCHARS,POS)
+"RTN","XUSRB1",39,0)
+ . . S RNDMSTR=RNDMSTR_CHAR
+"RTN","XUSRB1",40,0)
+ . . S ALLCHARS=$P(ALLCHARS,CHAR,1)_$P(ALLCHARS,CHAR,2) ;compress by 1
+"RTN","XUSRB1",41,0)
+ . X "ZI "" ;;""_RNDMSTR"      ;save random string in routine
+"RTN","XUSRB1",42,0)
+ X "ZS"                        ;save routine
+"RTN","XUSRB1",43,0)
+ Q
+"RTN","XUSRB1",44,0)
+ ;
+"RTN","XUSRB1",45,0)
+ ;
+"RTN","XUSRB1",46,0)
+Z ;;
+"RTN","XUSRB1",47,0)
+ ;;wkEo-ZJt!dG)49K{nX1BS$vH<&:Myf*>Ae0jQW=;|#PsO`'%+rmb[gpqN,l6/hFC@DcUa ]z~R}"V\iIxu?872.(TYL5_3
+"RTN","XUSRB1",48,0)
+ ;;rKv`R;M/9BqAF%&tSs#Vh)dO1DZP> *fX'u[.4lY=-mg_ci802N7LTG<]!CWo:3?{+,5Q}(@jaExn$~p\IyHwzU"|k6Jeb
+"RTN","XUSRB1",49,0)
+ ;;\pV(ZJk"WQmCn!Y,y@1d+~8s?[lNMxgHEt=uw|X:qSLjAI*}6zoF{T3#;ca)/h5%`P4$r]G'9e2if_>UDKb7<v0&- RBO.
+"RTN","XUSRB1",50,0)
+ ;;depjt3g4W)qD0V~NJar\B "?OYhcu[<Ms%Z`RIL_6:]AX-zG.#}$@vk7/5x&*m;(yb2Fn+l'PwUof1K{9,|EQi>H=CT8S!
+"RTN","XUSRB1",51,0)
+ ;;NZW:1}K$byP;jk)7'`x90B|cq@iSsEnu,(l-hf.&Y_?J#R]+voQXU8mrV[!p4tg~OMez CAaGFD6H53%L/dT2<*>"{\wI=
+"RTN","XUSRB1",52,0)
+ ;;vCiJ<oZ9|phXVNn)m K`t/SI%]A5qOWe\&?;jT~M!fz1l>[D_0xR32c*4.P"G{r7}E8wUgyudF+6-:B=$(sY,LkbHa#'@Q
+"RTN","XUSRB1",53,0)
+ ;;hvMX,'4Ty;[a8/{6l~F_V"}qLI\!@x(D7bRmUH]W15J%N0BYPkrs&9:$)Zj>u|zwQ=ieC-oGA.#?tfdcO3gp`S+En K2*<
+"RTN","XUSRB1",54,0)
+ ;;jd!W5[];4'<C$/&x|rZ(k{>?ghBzIFN}fAK"#`p_TqtD*1E37XGVs@0nmSe+Y6Qyo-aUu%i8c=H2vJ\) R:MLb.9,wlO~P
+"RTN","XUSRB1",55,0)
+ ;;2ThtjEM+!=xXb)7,ZV{*ci3"8@_l-HS69L>]\AUF/Q%:qD?1~m(yvO0e'<#o$p4dnIzKP|`NrkaGg.ufCRB[; sJYwW}5&
+"RTN","XUSRB1",56,0)
+ ;;vB\5/zl-9y:Pj|=(R'7QJI *&CTX"p0]_3.idcuOefVU#omwNZ`$Fs?L+1Sk<,b)hM4A6[Y%aDrg@~KqEW8t>H};n!2xG{
+"RTN","XUSRB1",57,0)
+ ;;sFz0Bo@_HfnK>LR}qWXV+D6`Y28=4Cm~G/7-5A\b9!a#rP.l&M$hc3ijQk;),TvUd<[:I"u1'NZSOw]*gxtE{eJp|y (?%
+"RTN","XUSRB1",58,0)
+ ;;M@,D}|LJyGO8`$*ZqH .j>c~h<d=fimszv[#-53F!+a;NC'6T91IV?(0x&/{B)w"]Q\YUWprk4:ol%g2nE7teRKbAPuS_X
+"RTN","XUSRB1",59,0)
+ ;;.mjY#_0*H<B=Q+FML6]s;r2:e8R}[ic&KA 1w{)vV5d,$u"~xD/Pg?IyfthO@CzWp%!`N4Z'3-(o|J9XUE7k\TlqSb>anG
+"RTN","XUSRB1",60,0)
+ ;;xVa1']_GU<X`|\NgM?LS9{"jT%s$}y[nvtlefB2RKJW~(/cIDCPow4,>#zm+:5b@06O3Ap8=*7ZFY!H-uEQk; .q)i&rhd
+"RTN","XUSRB1",61,0)
+ ;;I]Jz7AG@QX."%3Lq>METUo{Pp_ |a6<0dYVSv8:b)~W9NK`(r'4fs&wim\kReC2hg=HOj$1B*/nxt,;c#y+![?lFuZ-5D}
+"RTN","XUSRB1",62,0)
+ ;;Rr(Ge6F Hx>q$m&C%M~Tn,:"o'tX/*yP.{lZ!YkiVhuw_<KE5a[;}W0gjsz3]@7cI2\QN?f#4p|vb1OUBD9)=-LJA+d`S8
+"RTN","XUSRB1",63,0)
+ ;;I~k>y|m};d)-7DZ"Fe/Y<B:xwojR,Vh]O0Sc[`$sg8GXE!1&Qrzp._W%TNK(=J 3i*2abuHA4C'?Mv\Pq{n#56LftUl@9+
+"RTN","XUSRB1",64,0)
+ ;;~A*>9 WidFN,1KsmwQ)GJM{I4:C%}#Ep(?HB/r;t.&U8o|l['Lg"2hRDyZ5`nbf]qjc0!zS-TkYO<_=76a\X@$Pe3+xVvu
+"RTN","XUSRB1",65,0)
+ ;;yYgjf"5VdHc#uA,W1i+v'6|@pr{n;DJ!8(btPGaQM.LT3oe?NB/&9>Z`-}02*%x<7lsqz4OS ~E$\R]KI[:UwC_=h)kXmF
+"RTN","XUSRB1",66,0)
+ ;;5:iar.{YU7mBZR@-K|2 "+~`M%8sq4JhPo<_X\Sg3WC;Tuxz,fvEQ1p9=w}FAI&j/keD0c?)LN6OHV]lGy'$*>nd[(tb!#
 "VER")
 8.0^22.0
 **END**
