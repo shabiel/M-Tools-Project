@@ -3,9 +3,8 @@ package gov.va.mumps.debug.ui.terminal;
 import gov.va.mumps.debug.core.MDebugSettings;
 
 import org.eclipse.tm.internal.terminal.provisional.api.ISettingsStore;
-import org.eclipse.tm.internal.terminal.ssh.SshSettings;
+import org.eclipse.tm.terminal.connector.ssh.connector.SshSettings;
 
-@SuppressWarnings("restriction")
 public class VistASSHSettings extends SshSettings {
 	public String getHost() {
 		return MDebugSettings.getSSHHost();

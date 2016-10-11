@@ -10,10 +10,9 @@ import java.io.OutputStream;
 import org.eclipse.tm.internal.terminal.provisional.api.ISettingsPage;
 import org.eclipse.tm.internal.terminal.provisional.api.ISettingsStore;
 import org.eclipse.tm.internal.terminal.provisional.api.ITerminalControl;
-import org.eclipse.tm.internal.terminal.telnet.ITelnetSettings;
-import org.eclipse.tm.internal.terminal.telnet.TelnetConnector;
+import org.eclipse.tm.terminal.connector.telnet.connector.ITelnetSettings;
+import org.eclipse.tm.terminal.connector.telnet.connector.TelnetConnector;
 
-@SuppressWarnings("restriction")
 public class CacheTelnetConnector extends TelnetConnector implements IMInterpreter {
 	private VistATelnetSettings settings = new VistATelnetSettings();
 	private CacheTelnetOutputStream os;
@@ -45,7 +44,6 @@ public class CacheTelnetConnector extends TelnetConnector implements IMInterpret
 		return settings;
 	}
 	
-	@Override
 	public ISettingsPage makeSettingsPage() {
 		return null;
 	}
