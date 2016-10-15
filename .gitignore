@@ -19,6 +19,15 @@ local.properties
 # External tool builders
 .externalToolBuilders/
 
+# External Plug Ins
+External Plug-in Libraries/
+
+# Remote System Temp Files
+RemoteSystemsTempFiles/
+
+# Recommenders
+.recommenders/
+
 # Locally stored "Eclipse launch configurations"
 *.launch
 
