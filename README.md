@@ -18,7 +18,6 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  - On Eclipse, Menu Help > Install New Software...
  - Click Add
  - Depending on your version, you need to put it an update site name and URL that corresponds to your version. See the table below.
- - Enter `M-tools` in first field and `https://raw.githubusercontent.com/shabiel/M-Tools-Project/master/MToolsUpdateSiteProject/` on the next.
  - Click on Next, Next, Accept the license, Finish.
  - Override the warning about unsigned content.
 
