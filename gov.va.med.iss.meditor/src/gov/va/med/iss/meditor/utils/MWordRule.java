@@ -62,7 +62,6 @@ public class MWordRule extends WordRule {
 	 * @param word the word this rule will search for, may not be <code>null</code>
 	 * @param token the token to be returned if the word has been found, may not be <code>null</code>
 	 */
-	@SuppressWarnings("unchecked")
 	public void addWord(String word, IToken token) {
 		fWords.put(word, token);
 	}
