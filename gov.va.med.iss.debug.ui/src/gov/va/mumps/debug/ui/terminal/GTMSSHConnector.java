@@ -10,9 +10,8 @@ import java.io.OutputStream;
 import org.eclipse.tm.internal.terminal.provisional.api.ISettingsPage;
 import org.eclipse.tm.internal.terminal.provisional.api.ISettingsStore;
 import org.eclipse.tm.internal.terminal.provisional.api.ITerminalControl;
-import org.eclipse.tm.internal.terminal.ssh.SshConnector;
+import org.eclipse.tm.terminal.connector.ssh.connector.SshConnector;
 
-@SuppressWarnings("restriction")
 public class GTMSSHConnector extends SshConnector implements IMInterpreter {
 	private VistASSHSettings settings = new VistASSHSettings();
 	private GTMSSHOutputStream os;
@@ -39,7 +38,6 @@ public class GTMSSHConnector extends SshConnector implements IMInterpreter {
 		super.connect(wrapTC);
 	}
 
-	@Override
 	public ISettingsPage makeSettingsPage() {
 		return null;
 	}

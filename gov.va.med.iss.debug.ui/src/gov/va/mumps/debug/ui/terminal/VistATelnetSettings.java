@@ -3,9 +3,8 @@ package gov.va.mumps.debug.ui.terminal;
 import gov.va.mumps.debug.core.MDebugSettings;
 
 import org.eclipse.tm.internal.terminal.provisional.api.ISettingsStore;
-import org.eclipse.tm.internal.terminal.telnet.ITelnetSettings;
+import org.eclipse.tm.terminal.connector.telnet.connector.ITelnetSettings;
 
-@SuppressWarnings("restriction")
 public class VistATelnetSettings implements ITelnetSettings {
 	@Override
 	public String getHost() {

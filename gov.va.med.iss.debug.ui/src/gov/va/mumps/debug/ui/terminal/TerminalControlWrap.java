@@ -12,7 +12,6 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.tm.internal.terminal.provisional.api.ITerminalControl;
 import org.eclipse.tm.internal.terminal.provisional.api.TerminalState;
 
-@SuppressWarnings("restriction")
 public class TerminalControlWrap implements ITerminalControl {
 	private ITerminalControl actual;
 	private OutputStream os;

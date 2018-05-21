@@ -3,10 +3,11 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
 
 # Installation
 ## Requirements
- - Recent Eclipse. Tested on Luna, Kepler, and Juno.
+ - Recent Eclipse. Tested on Luna, Kepler, and Juno, Mars, Neon, and Oxygen.
  - Java 1.7 or Java 1.8. YOU MUST CHECK FOR THAT USING YOUR OS'S COMMAND LINE.
  ECLISPE DOES NOT WARN YOU IF IT CAN'T LOAD IT. Use `java -version` to find out
  what version you have.
+ - On Macs, you must install the JDK first before Eclipse will install.
 
 ## How to install
 ### Eclipse
@@ -18,16 +19,18 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  - On Eclipse, Menu Help > Install New Software...
  - Click Add
  - Depending on your version, you need to put it an update site name and URL that corresponds to your version. See the table below.
+ - Enter `M-tools` in first field and `https://raw.githubusercontent.com/shabiel/M-Tools-Project/master/MToolsUpdateSiteProject/` on the next.
  - Click on Next, Next, Accept the license, Finish.
  - Override the warning about unsigned content.
 
 |Eclipse Version| Update Site Name | Update Site Location|
 |---------------|------------------|---------------------|
-| Juno | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
+| Juno   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
 | Kepler | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
-| Luna | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
-| Mars | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/mars/MToolsUpdateSiteProject/`|
-| Neon | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/neon/MToolsUpdateSiteProject/`|
+| Luna   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
+| Mars   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/mars/MToolsUpdateSiteProject/`|
+| Neon   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/neon/MToolsUpdateSiteProject/`|
+| Oxygen | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/neon/MToolsUpdateSiteProject/`|
 
 
 ### VISTA
@@ -43,18 +46,6 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  wget https://raw.githubusercontent.com/shabiel/M-Tools/T12/M-Editor%20For%20Eclipse%20XT_7.3_101%20not%20yet%20released/XT73P101T12.kid
  $gtm_dist/mumps -dir
 
- GTM>D ^XPDIL,^XPDI
-
- Enter a Host File: /tmp/XT73P101T12.kid
-
- KIDS Distribution saved on Apr 17, 2015@16:20:41
- Comment: T12: Added the correct version of XUSRB1
-
- This Distribution contains Transport Globals for the following Package(s):
- XT*7.3*101
- Distribution OK!
-
- Want to Continue with Load? YES//
  GTM>D ^XPDIL,^XPDI
 
  Enter a Host File: /tmp/XT73P101T12.kid
@@ -89,12 +80,12 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  
 # Brief Usage Tutorial
  1. Make sure that you have a VistALink port open on your VISTA environment. Cache users can use the XOBU SITE SETUP MENU to start a port. GT.M users need to use a xinetd listener that invokes `GTMLNX^XOBVTCP`.
- 2. Menu Window > Preferences > VistA. Give the server a name and add its ip address and port number for your VistALink port. You can optionally put in an access code and verify code (NEW). If you are on a Mac, you will not be allowed to proceed unless you put those in, as the windowing system for prompting for access code and verify code cannot be run on the Mac to due threading issues with Eclipse and Cocoa starting from Java 1.7.
+ 2. Menu Window > Preferences > VistA. Give the server a name and add its ip address and port number for your VistALink port.
  3. Hit OK, OK.
  4. Open M Prespective by Window > Open Prespective > Other > VistA. You may need to resize your prespective by "restoring" the Windows.
  5. Create a new Project, or import a git repository. You can google the latter. For the first, File > New > Project > General > Project. Choose a name and hit okay. 
  6. On the Project Exlporer on your upper left corner, right click on the Project, choose Properties, then choose VistA. Type in the name *exactly* of your VistA server that you set up in Step 2. Hit OK.
- 7. Click on Menu VistA > Connect to VistA. You should see a screen asking you for the access and verify code; if you haven't entered your access and verify code in the preferences box. If you don't see this screen, you need to check all your settings, down to whether you can even connect to the VistALink port from netcat or telnet. Also, YOU MUST USE A USER WHO HAS THE KEY XUPROGMODE.
+ 7. Click on Menu VistA > Connect to VistA. You should see a screen asking you for the access and verify code. If you don't see this screen, you need to check all your settings, down to whether you can even connect to the VistALink port from netcat or telnet. Also, YOU MUST USE A USER WHO HAS THE KEY XUPROGMODE.
  8. Once you are signed in, you can use the VistA menu or the ugly green M button to load a routine. Saving is done using the regular Eclipse Save. To create a new routine Menu File > New > VistA Routine.
  
  That's it.
@@ -102,13 +93,7 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  There is detailed usage documentation in the repository.
 
 # Linux Notes
-Linux is always finicky. So here's my set-up that I am sure works.
-
- - I have Ubuntu 14.04 x64.
- - Install Oracle Java 7 or 8. Make sure it's set to be the default java
-   implementation in the system. My memory tells me that OpenJDK didn't work; but
-   it should be tried again.
- - Eclipse Luna x64.
+I no longer have problems installing on Linux. It will run well on Oracle JDK or OpenJDK.
 
 # Plug-in Development guidance
 
