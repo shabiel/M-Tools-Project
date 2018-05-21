@@ -3,12 +3,11 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
 
 # Installation
 ## Requirements
- - Recent Eclipse. Tested on Luna, Kepler, and Juno.
+ - Recent Eclipse. Tested on Luna, Kepler, and Juno, Mars, Neon, and Oxygen.
  - Java 1.7 or Java 1.8. YOU MUST CHECK FOR THAT USING YOUR OS'S COMMAND LINE.
  ECLISPE DOES NOT WARN YOU IF IT CAN'T LOAD IT. Use `java -version` to find out
  what version you have.
- - DOES NOT WORK ON MACS. Joel Ivey's version works, but I have to make
-   instructions for it.
+ - On Macs, you must install the JDK first before Eclipse will install.
 
 ## How to install
 ### Eclipse
@@ -26,11 +25,12 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
 
 |Eclipse Version| Update Site Name | Update Site Location|
 |---------------|------------------|---------------------|
-| Juno | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
+| Juno   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
 | Kepler | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
-| Luna | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
-| Mars | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/mars/MToolsUpdateSiteProject/`|
-| Neon | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/neon/MToolsUpdateSiteProject/`|
+| Luna   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/luna/MToolsUpdateSiteProject/`|
+| Mars   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/mars/MToolsUpdateSiteProject/`|
+| Neon   | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/neon/MToolsUpdateSiteProject/`|
+| Oxygen | M-Eclipse Plugin | `https://raw.githubusercontent.com/shabiel/M-Tools-Project/neon/MToolsUpdateSiteProject/`|
 
 
 ### VISTA
@@ -46,18 +46,6 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  wget https://raw.githubusercontent.com/shabiel/M-Tools/T12/M-Editor%20For%20Eclipse%20XT_7.3_101%20not%20yet%20released/XT73P101T12.kid
  $gtm_dist/mumps -dir
 
- GTM>D ^XPDIL,^XPDI
-
- Enter a Host File: /tmp/XT73P101T12.kid
-
- KIDS Distribution saved on Apr 17, 2015@16:20:41
- Comment: T12: Added the correct version of XUSRB1
-
- This Distribution contains Transport Globals for the following Package(s):
- XT*7.3*101
- Distribution OK!
-
- Want to Continue with Load? YES//
  GTM>D ^XPDIL,^XPDI
 
  Enter a Host File: /tmp/XT73P101T12.kid
@@ -105,13 +93,7 @@ This package lets you edit M Routines and Look at globals using Eclipse. It also
  There is detailed usage documentation in the repository.
 
 # Linux Notes
-Linux is always finicky. So here's my set-up that I am sure works.
-
- - I have Ubuntu 14.04 x64.
- - Install Oracle Java 7 or 8. Make sure it's set to be the default java
-   implementation in the system. My memory tells me that OpenJDK didn't work; but
-   it should be tried again.
- - Eclipse Luna x64.
+I no longer have problems installing on Linux. It will run well on Oracle JDK or OpenJDK.
 
 # Plug-in Development guidance
 
